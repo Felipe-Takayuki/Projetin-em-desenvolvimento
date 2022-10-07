@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova guia</title>
+    <style>
+        .GoogleApps{
+            display: inline-block;
+        }
+        .links{
+            position: relative;
+            top: -15px;
+            display: inline;
+        }
+        #imagem{
+            width: 40px;
+            height: 40px;
+            background-color:transparent;
+        }
+        .center{
+           position: relative;
+           right: 15%;
+            text-align: center;
+        }
+        button{
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: white;
+            border-radius:50% ;
+        }
+        body{
+            background-color: gainsboro;
+            width:100%;
+            height: 100%;
+        }
+        .barra{
+            margin-right: 5px;
+            text-align: end;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            margin-left: 5px;
+        }
+        button:active{
+         background-color: rgb(184, 171, 171);
+        }
+        #apps{
+            position: fixed;
+            right: 10px;
+            display: none;
+            width: 300px;
+            height: 500px;
+            background-color: red;
+        }
+        .logopesquise{
+position: relative;
+left: 50%;
+top: 180px;
+translate: -50%;
+           width: 50%;
+           height: 300px;
+        /* background-color: red; */
+        }
+        .image{
+            width: 100%;
+text-align: center;
+padding: 5px;
+        }
+        .input{
+width: 100%;
+text-align: center;
+        }
+        #pesquisa{
+            box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+            border-radius: 40px;
+            width:90% ;
+            height: 40px;
+            background-image: url("imagens/png-transparent-search-logo-magnifying-glass-computer-icons-search-box-icon-search-drawing-icon-lens-data-background-process-thumbnail-removebg-preview.png");
+            background-repeat: no-repeat;
+            background-size: 1.5em;
+     padding: 2em;
+     padding-right: 2em;
+     margin: 5px;
+  background-position: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="barra">
+        <div class="links">
+          <a href="https://www.google.com/intl/pt/gmail/about/">Gmail</a>
+          <a href="https://www.google.com.br/imghp?hl=pt-BR&tab=ri&ogbl">Imagens</a>
+        </div>
+        <div class="GoogleApps">
+            <button onclick="document.getElementById('apps').style.display='block'"><div class="center"><img src="imagens/download__1_-removebg-preview.png" alt="Google Apps" id="imagem"></div></button>
+            <div id="apps"></div>
+        </div>
+    </div>
+<div class="logopesquise">
+ <div class="image"><img src="imagens/googlelogo_color_160x56dp.png" alt="Google"></div>
+ <div class="input"><input type="search" name="pesquisa" id="pesquisa" placeholder="Search Google or type a URL"></div>
+</div>
+</body>
+</html>
